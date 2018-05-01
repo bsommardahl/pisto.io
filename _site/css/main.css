@@ -23,7 +23,9 @@ h2 {
   font-weight: 300; }
 
 h3 {
-  font-size: 26px; }
+  font-size: 28px;
+  color: #251EC3;
+  font-weight: bold; }
 
 h4 {
   font-size: 19px; }
@@ -150,9 +152,23 @@ th:first-child, td:first-child {
 .icon--check {
   width: 25px;
   height: 25px; }
+.icon--phone {
+  width: 100px;
+  height: 100px;
+  margin: 20px; }
 .icon--social {
   width: 20px;
   height: 20px; }
+
+.contact {
+  max-width: 1014px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 100px; }
 
 footer {
   background: #F4F5F6;

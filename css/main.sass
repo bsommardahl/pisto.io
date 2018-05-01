@@ -32,7 +32,9 @@ h2
   font-size: 48px
   font-weight: 300
 h3
-  font-size: 26px  
+  font-size: 28px 
+  color: $blue-pisto
+  font-weight: bold
 h4
   font-size: 19px
 p
@@ -152,7 +154,7 @@ th, td
 
 
 th:first-child, td:first-child
-  text-align: left
+  text-align: left  
 
 .icon
   &--pricing
@@ -161,10 +163,23 @@ th:first-child, td:first-child
   &--check
     width: 25px
     height: 25px
+  &--phone
+    width: 100px
+    height: 100px
+    margin: 20px
   &--social
     width: 20px
     height: 20px
-
+.contact
+  max-width: $container
+  margin: 0 auto
+  justify-content: center
+  display: flex
+  flex-direction: column
+  text-align: center
+  align-items: center
+  padding: 100px
+  
 footer
   background: $grey-background
   padding: 40px 0 10px
@@ -190,6 +205,7 @@ footer
     display: inline
     text-decoration: none
     padding: 5px 5px
+  
 
   
     
