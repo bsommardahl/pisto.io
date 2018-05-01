@@ -1,0 +1,197 @@
+---
+---
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400)
+
+*, *:before, *:after
+  box-sizing: inherit
+  margin: 0
+  padding: 0
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+
+html
+  box-sizing: border-box
+  font-family: 'Lato', sans-serif
+  color: #273B55
+  
+header
+  border-bottom: 1px solid #F4F5F6
+
+// colors
+$green-pisto: #30DD9D
+$blue-pisto: #251EC3
+$grey-background: #F4F5F6
+
+// headings
+
+h1
+  font-size: 62px
+  font-weight: 300
+h2
+  font-size: 48px
+  font-weight: 300
+h3
+  font-size: 26px  
+h4
+  font-size: 19px
+p
+  font-size: 18px
+  line-height: 28px
+  color: rgba(39,59,85,0.5)
+  letter-spacing: 1px
+  padding: 20px 0
+a
+  font-size: 18px 
+  text-decoration: none
+  color: $green-pisto  
+a:hover
+  text-decoration: underline
+
+img 
+  width: 100%
+  
+$gutter: 15px
+$container: 1014px
+
+hr 
+  color: #F4F5F6
+  opacity: 0.2
+
+// flexbox system
+.flex-25
+  flex: 1 1 25%
+  padding: $gutter
+
+.flex-33
+  flex: 1 1 33.3333%
+  padding: $gutter
+
+.flex-50
+  flex: 1 1 50%
+  padding: $gutter
+
+.flex-66
+  flex: 1 1 66.6666%
+  padding: $gutter
+
+.flex-100
+  flex: 1 1 100%
+  padding: $gutter
+
+// buttons
+
+.btn-pisto
+  color: #ffffff
+  font-size: 16px
+  border-radius: 8px
+  text-align: center
+  padding: 14px 30px
+  text-decoration: none
+  font-weight: bold
+  display: inline-block
+  transition: all 250ms ease
+  background: $blue-pisto
+
+.active
+  font-weight: 800   
+.scroll
+  padding: 5px
+  background: $green-pisto
+  width: 100%
+  color: #ffffff
+  display: flex
+  font-size: 14px
+  &__contain
+    max-width: $container
+    display: flex
+    margin: 0 auto
+    font-size: 14px
+    & span
+      padding: 0 5px
+      color: $blue-pisto
+    & a
+      color: #ffffff
+      font-size: 14px
+      padding: 0 5px
+nav
+  max-width: $container
+  margin: 0 auto
+  height: 100px
+  justify-content: space-between
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: 20px
+  flex-wrap: wrap
+
+.logo-pisto
+  width: 160px
+
+.hero
+  display: flex
+  width: $container
+  margin: 0 auto
+  padding: 100px 0
+
+.pricing-table
+  max-width:  $container
+  margin: 0 auto
+  text-align: center
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+  width: 100%
+  border: 1px solid #F4F5F6
+  margin: 45px 0
+
+th, td
+  text-align: center
+  padding: 16px
+
+
+th:first-child, td:first-child
+  text-align: left
+
+.icon
+  &--pricing
+    width: 50px
+    height: 50px
+  &--check
+    width: 25px
+    height: 25px
+  &--social
+    width: 20px
+    height: 20px
+
+footer
+  background: $grey-background
+  padding: 40px 0 10px
+  text-align: center
+  & p
+    padding: 20px
+    font-size: 12px
+.footer
+  max-width: $container
+  margin: 0 auto
+  height: 100px
+  justify-content: space-between
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: 20px
+  flex-wrap: wrap
+  &__social li
+    display: inline
+    text-decoration: none
+    padding: 5px 5px
+  &__navbar li
+    display: inline
+    text-decoration: none
+    padding: 5px 5px
+
+  
+    
+
+    
