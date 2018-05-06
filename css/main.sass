@@ -53,6 +53,7 @@ a:hover
 
 img 
   width: 100%
+  height: 100%
   
 $gutter: 15px
 $container: 1014px
@@ -133,7 +134,8 @@ nav
 
 .hero
   display: flex
-  width: $container
+  max-width: $container
+  flex-wrap: wrap
   margin: 0 auto
   padding: 100px 0
 
@@ -202,7 +204,7 @@ th:first-child, td:first-child
   flex-direction: column
   text-align: center
   align-items: center
-  padding: 100px
+  padding: 0 0 100px 
   
 footer
   background: $grey-background
@@ -225,13 +227,53 @@ footer
     display: inline
     text-decoration: none
     padding: 5px 5px
+  &__navbar
+    display: flex
+    flex-direction: row
+    padding: 30px 0px
   &__navbar li
     display: inline
     text-decoration: none
-    padding: 5px 5px
-  
+    padding: 5px 10px
 
-  
-    
+@media (min-width: 200px) and (max-width:768px)
+  .scroll__contain 
+    font-size: 18px
 
-    
+  .scroll__contain a 
+    font-size: 18px
+  .logo-pisto
+    width: 165px
+    margin: 20px
+  nav
+    height: auto
+    justify-content: center
+  .hero
+    display: flex
+    max-width: $container
+    flex-wrap: wrap
+    flex-direction: column-reverse
+    margin: 0 auto
+    padding: 50px 20px
+  .hero img
+    height: 100%
+    margin: 0 0 70px
+  .businesses
+    margin: 0 auto
+    padding: 50px 20px
+  #precios
+    overflow: scroll
+    min-width: 335px
+  .contact
+    padding: 0 20px 100px  
+  .footer 
+    height: auto
+    justify-content: center
+    flex-direction: column
+    flex-wrap: nowrap
+    &__navbar
+      display: flex
+      flex-direction: column
+  footer p 
+    padding: 10px
+    font-size: 10px
