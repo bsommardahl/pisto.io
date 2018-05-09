@@ -4,10 +4,10 @@
                     <a href="index.html"> <img src="img/pisto.io.svg" alt="pisto.io"></a>
         </div>
         <ul class="footer__navbar">
-            <li><a href="http://app.pisto.io/">Prueba gratis</a></li>
-            <li><a href="#precios">Precios</a></li>
-            <li><a href="">​​​​​Contáctanos</a></li>
-            <li><a href="/index">English</a></li>
+            <li><a href="http://app.pisto.io/">Try it free</a></li>
+            <li><a href="#precios">Prices</a></li>
+            <li><a href="">​​​​​Contact us</a></li>
+            <li><a href="/index.html">Español</a></li>
         </ul>
         <ul class="footer__social">
             <li><img class="icon--social" src="img/facebook.svg" alt="facebook"></li>
@@ -17,12 +17,20 @@
         </ul>
     </div>
     <hr>
-    <p>© 2018 pisto.io todos los derechos reservados</p>
+    <p>© 2018 pisto.io all rights reserved</p>
 </footer>
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script>
     window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript">
+   $(document).ready(function(){
+        var userLang = navigator.language || navigator.userLanguage;
+        if (userLang == "es-ES") {
+            window.location.href = "/index.html";
+        }
+    });
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42413832-9"></script>
 <script>
