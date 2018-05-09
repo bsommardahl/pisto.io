@@ -89,22 +89,27 @@ hr {
 .active {
   font-weight: 800; }
 
-.scroll {
+.ribbon {
   padding: 5px;
   background: #30DD9D;
   width: 100%;
   color: #ffffff;
-  display: flex;
   font-size: 14px; }
-  .scroll__contain {
+  .ribbon__contain {
     max-width: 1014px;
+    justify-content: flex-end;
     display: flex;
     margin: 0 auto;
     font-size: 14px; }
-    .scroll__contain span {
+    .ribbon__contain p {
+      padding: 0;
+      text-align: center;
+      font-size: 14px;
+      color: white; }
+    .ribbon__contain span {
       padding: 0 5px;
       color: #251EC3; }
-    .scroll__contain a {
+    .ribbon__contain a {
       color: #ffffff;
       font-size: 14px;
       padding: 0 5px; }
@@ -223,10 +228,7 @@ footer {
     padding: 5px 10px; }
 
 @media (min-width: 200px) and (max-width: 768px) {
-  .scroll__contain {
-    font-size: 18px; }
-
-  .scroll__contain a {
+  .ribbon__contain {
     font-size: 18px; }
 
   .logo-pisto {

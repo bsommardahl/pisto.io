@@ -99,18 +99,23 @@ hr
 
 .active
   font-weight: 800   
-.scroll
+.ribbon
   padding: 5px
   background: $green-pisto
   width: 100%
   color: #ffffff
-  display: flex
   font-size: 14px
   &__contain
     max-width: $container
+    justify-content: flex-end
     display: flex
     margin: 0 auto
     font-size: 14px
+    & p 
+      padding: 0
+      text-align: center
+      font-size: 14px
+      color: white
     & span
       padding: 0 5px
       color: $blue-pisto
@@ -237,10 +242,7 @@ footer
     padding: 5px 10px
 
 @media (min-width: 200px) and (max-width:768px)
-  .scroll__contain 
-    font-size: 18px
-
-  .scroll__contain a 
+  .ribbon__contain 
     font-size: 18px
   .logo-pisto
     width: 165px
