@@ -7,7 +7,7 @@
             <li><a href="http://app.pisto.io/">Try it free</a></li>
             <li><a href="#precios">Prices</a></li>
             <li><a href="">​​​​​Contact us</a></li>
-            <li><a href="/index.html">Español</a></li>
+            <li><a href="/?noredirect">Español</a></li>
         </ul>
         <ul class="footer__social">
             <li><img class="icon--social" src="img/facebook.svg" alt="facebook"></li>
@@ -26,9 +26,11 @@
 </script>
 <script type="text/javascript">
    $(document).ready(function(){
-        var userLang = navigator.language || navigator.userLanguage;
-        if (userLang == "es-ES") {
-            window.location.href = "/index.html";
+        let url = new URL(window.location.href);
+        let allowRedirect = url.searchParams.get("noredirect") === null;
+        let userLang = navigator.language || navigator.userLanguage;
+        if (allowRedirect && userLang === "es") {
+            window.location.href = "/";
         }
     });
 </script>

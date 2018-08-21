@@ -15,13 +15,13 @@
         <div class="ribbon__contain">
             <p class="flex-25"></p>
             <p class="flex-50"><span>&#9990;</span>Llámanos <a href="tel:+50498926361">+50498926361</a></p>
-            <p class="flex-25"><a href="/en">English</a></p>
+            <p class="flex-25"><a href="/en?noredirect">English</a></p>
         </div>       
     </div>
     <header>
         <nav>
             <div class="logo-pisto">
-                <a href="index.html"> <img src="img/pisto.io.svg" alt="pisto.io"></a>
+                <a href="#"> <img src="img/pisto.io.svg" alt="pisto.io"></a>
             </div>
             <em><a class="btn-pisto" href="http://app.pisto.io/" target="_blank">PRUEBA GRATIS</a></em>
         </nav>   
@@ -269,7 +269,7 @@
             <li><a href="http://app.pisto.io/">Prueba gratis</a></li>
             <li><a href="#precios">Precios</a></li>
             <li><a href="">​​​​​Contáctanos</a></li>
-            <li><a href="/en">English</a></li>
+            <li><a href="/en?noredirect">English</a></li>
         </ul>
         <ul class="footer__social">
             <li><img class="icon--social" src="img/facebook.svg" alt="facebook"></li>
@@ -288,8 +288,10 @@
 </script>
 <script type="text/javascript">
     $(document).ready(function(){
-         var userLang = navigator.language || navigator.userLanguage;
-         if (userLang == "en-US") {
+         let url = new URL(window.location.href);
+         let allowRedirect = url.searchParams.get("noredirect") === null;
+         let userLang = navigator.language || navigator.userLanguage;
+         if (allowRedirect && userLang === "en-US") {
              window.location.href = "/en";
          }
      });
